@@ -6,10 +6,9 @@ You head to your favorite website and your day just got worse, your favorite str
 
 ![out of stock](https://github.com/TaraRosen/Cannabis_Rec_Engine/blob/master/2_out_of_stock.png)
 
+Within the next few years, this scenario could become a reality.
 
 ## Public Sentiment
-
-Within the next few years, this scenario could become a reality.
 
 ![status by state](https://github.com/TaraRosen/Cannabis_Rec_Engine/blob/master/3_status_by_state.png)
 
@@ -69,4 +68,4 @@ And finally, both strains match up on 2 out of the 3 of their flavors and their 
 
 Overall, Blue Dream and Cherry Skunk match up exactly on 9 out of 19 of their attributes and share 18 out of 19 of the same attributes.
 
-I think NLP with CountVectorizer and cosine similarity works pretty well and I think that someone would be very pleased with using Cherry Skunk as a Blue Dream substitute!
+Looks like NLP with CountVectorizer and cosine similarity works pretty well and I think that someone would be very pleased with using Cherry Skunk as a Blue Dream substitute!
