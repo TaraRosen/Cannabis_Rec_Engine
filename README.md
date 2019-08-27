@@ -69,3 +69,9 @@ And finally, both strains match up on 2 out of the 3 of their flavors and their 
 Overall, Blue Dream and Cherry Skunk match up exactly on 9 out of 19 of their attributes and share 18 out of 19 of the same attributes.
 
 Looks like NLP with CountVectorizer and cosine similarity works pretty well and I think that someone would be very pleased with using Cherry Skunk as a Blue Dream substitute!
+
+
+
+
+[Code File](https://github.com/TaraRosen/Cannabis_Rec_Engine/blob/master/Cannabis%20Recommender%20-%20DS042219%20-%20Final.ipynb)
+[Quick Recommendation](https://github.com/TaraRosen/Cannabis_Rec_Engine/blob/master/Recommend_Closest_5_Strains.ipynb)
