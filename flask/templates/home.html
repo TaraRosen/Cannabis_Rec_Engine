@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<body>
+		<div class="header">
+			<h1>Cannabis Recommendations For Out of Stock Strains</h1>
+		</div>
+		<div class="col-6 col-s-9">
+				<div id="Input_Area">
+					<form action="http://localhost:5000/result" method="POST">
+						<fieldset>
+								<label>Out of Stock Strain:<br />
+									<select name='strains'>
+											{% for strain in strains %}
+													<option value= "{{strain}}">{{strain}}</option>
+											{% endfor %}
+									</select>
+									<input type = "submit" value = "Find Alternatives">
+									</input>
+								</label>
+						</fieldset>
+					</form>
+				</div>
+				<div class="results" align="center">
+					<h2>Out of Stock Strain</h2>
+					    {{ your_strain.title() }}
+				</div>
+				<div class="results" align="center">
+					<h2>Recommendations</h2>
+						{% for rec in Recommendations %}
+						<p>{{ rec.title() }}</p>
+						{% endfor %}
+				</div>
+		</div>
+	</body>
+	</html>

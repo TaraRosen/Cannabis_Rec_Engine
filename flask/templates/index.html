@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="../static/css/styles.css">
+	<script src="./scripts/myScript.js"></script>
+	<body>
+		<div class="header">
+			<h1>BABEL</h1>
+		</div>
+
+
+		<div class="row">
+			<div class="col-3 col-s-3 menu">
+				<h2 id="content-header">&nbsp;</h2>
+				<ul>
+			  		<li id="German" onclick="showGameBoard()">Deutsch</li>
+			  		<li id="French" onclick="showVisualization()">Français</li>
+			  		<li>Italiano</li>
+			  		<li>Español</li>
+				</ul>
+		  	</div>
+
+			<div class="col-6 col-s-9">
+				<div id="Input_Area">
+					<form action="http://localhost:5000/result" method="POST">
+						<h3>
+							<input type="radio" name="topping" value="Deutsch">Deutsch</input>
+							<input type="radio" name="topping" value="Français">Français</input>
+							<input type="radio" name="topping" value="Italiano">Italiano</input>
+							<input type="radio" name="topping" value="Español">Español</input>
+						</h3>
+					 <p>Enter text: <input type = "text" name = "Input_Text" /></p>
+					 <p><input type = "submit" value = "submit" /></p>
+				  </form>
+				</div>
+				<div id="Project2">
+					<h3>Input Text</h3>
+					<p>{{input_text}}</p>
+					<h3>Translation</h3>
+					<p>{{translation}}</p>
+<!-- 					<img id="v-win" class="window"></img> -->
+<!-- 					<iframe src="http://127.0.0.1:8050/" width="100%;" style="border:none;"></iframe> -->
+<!-- 					<object class="window" type="text/html" data="http://127.0.0.1:8050/" height="400px;" width="100%;" style="border:none; overflow:hidden;"></object> -->
+				</div>
+			</div>
+			<div class="col-3 col-s-12">
+				<div class="aside">
+					<h3>BLEU Scores</h3>
+					{% for bleu_score in bleu_scores %}
+						<p>{{bleu_score}}</p>
+					{% endfor %}
+				</div>
+			</div>
+
+		</div>
+		<div class="footer">
+			<p>dhh.com</p>
+		</div>
+	</body>
+</html>

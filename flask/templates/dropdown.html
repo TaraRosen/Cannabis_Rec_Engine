@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown</title>
+</head>
+<body>
+<select name= strains method="GET" action="/">
+    <option value= "{{strains[0]}}" SELECTED>{{strains[0]}}</option>
+    {% for strain in strains[1:] %}
+        <option value= "{{strain}}">{{strain}}</option>
+
+    {% endfor %}
+</select>
+
+</body>
+</html>
+
+strains = [owhfowuhfoqewrhgoqef]
