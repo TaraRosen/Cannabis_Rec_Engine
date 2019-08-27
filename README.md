@@ -9,6 +9,8 @@ You head to your favorite website...
 
 ...and your day just got worse… your favorite strain is out of stock. 
 
+### Public Sentiment
+
 Within the next few years, this scenario could become a reality.
 
 ![status by state](https://github.com/TaraRosen/Cannabis_Rec_Engine/blob/master/3_status_by_state.png)
